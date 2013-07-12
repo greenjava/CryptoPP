@@ -176,11 +176,11 @@ if (WIN32)
 
   if (TARGET cryptopp)
     set_target_properties (cryptopp PROPERTIES COMPILE_DEFINITIONS "${_TEMP}")
-    set_target_properties (cryptopp PROPERTIES DEBUG_POSTFIX d)
+    #set_target_properties (cryptopp PROPERTIES DEBUG_POSTFIX d)
   endif (TARGET cryptopp)
 
   if (TARGET cryptlib)
-    set_target_properties (cryptlib PROPERTIES DEBUG_POSTFIX d)
+    #set_target_properties (cryptlib PROPERTIES DEBUG_POSTFIX d)
   endif (TARGET cryptlib)
 
   if (CRYPTOPP_BUILD_TESTS)
