@@ -150,7 +150,7 @@ if (MSVC_IDE)
   # These files don't use precompiled headers
   set_source_files_properties (dll.cpp cryptlib_bds.cpp iterhash.cpp
     PROPERTIES COMPILE_FLAGS -Y-)
-endif (MSVC)
+endif (MSVC_IDE)
 
 if (_CRYPTOPP_INSTALL_TARGETS AND WIN32)
   set_target_properties (${_CRYPTOPP_INSTALL_TARGETS} PROPERTIES DEFINE_SYMBOL
